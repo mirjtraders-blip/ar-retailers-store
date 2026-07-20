@@ -33,35 +33,39 @@ const CATS = {
    price:null => "Enquire" (WhatsApp). deal:true => badge. */
 const PRODUCTS = [
   // clothing
+  { id: "tops-tiedye", n: "Tie-Dye Tops", cat: "clothing", sub: "tops", e: "👕", u: "each", price: 149.99, deal: true, img: 1 },
+  { id: "dress-floral", n: "Floral Dresses", cat: "clothing", sub: "tops", e: "👗", u: "each", price: 99.99, deal: true, img: 1 },
   { id: "tops-ladies", n: "Ladies Fashion Tops", cat: "clothing", sub: "tops", e: "👚", u: "each", price: null },
-  { id: "tops-winter", n: "Winter Tops & Long Sleeves", cat: "clothing", sub: "tops", e: "👕", u: "each", price: null },
-  { id: "tops-kids", n: "Kids T-Shirts", cat: "clothing", sub: "tops", e: "🧒", u: "each", price: null },
-  { id: "socks-char", n: "Novelty Character Socks", cat: "clothing", sub: "tops", e: "🧦", u: "per pair", price: null },
-  { id: "denim-skirt", n: "Distressed Denim Skirt", cat: "clothing", sub: "pants", e: "👖", u: "each", price: 120, deal: true },
+  { id: "socks-char", n: "Novelty Character Socks", cat: "clothing", sub: "tops", e: "🧦", u: "3-pair pack", price: null, img: 1 },
+  { id: "denim-skirt", n: "Distressed Denim Skirt", cat: "clothing", sub: "pants", e: "👖", u: "each", price: 120, deal: true, img: 1 },
   { id: "denim-jeans", n: "Denim Jeans", cat: "clothing", sub: "pants", e: "👖", u: "each", price: null },
   { id: "trackpants", n: "Trackpants", cat: "clothing", sub: "pants", e: "🩳", u: "each", price: null },
+  { id: "tracksuit", n: "Assorted Branded Tracksuits", cat: "clothing", sub: "hoodies", e: "🧥", u: "per set", price: 179.99, deal: true, img: 1 },
   { id: "hoodie-fleece", n: "Fleece Hoodies", cat: "clothing", sub: "hoodies", e: "🧥", u: "each", price: null },
-  { id: "hoodie-kids", n: "Kids Hoodies", cat: "clothing", sub: "hoodies", e: "🧥", u: "each", price: null },
   { id: "jacket-winter", n: "Winter Jackets", cat: "clothing", sub: "jackets", e: "🧥", u: "each", price: null },
   { id: "jacket-puffer", n: "Puffer Jackets", cat: "clothing", sub: "jackets", e: "🧥", u: "each", price: null },
   // shoes
   { id: "takkies-casual", n: "Casual Takkies", cat: "shoes", sub: "takkies", e: "👟", u: "per pair", price: null },
   { id: "takkies-sport", n: "Sports Takkies", cat: "shoes", sub: "takkies", e: "👟", u: "per pair", price: null },
   { id: "takkies-kids", n: "Kids Takkies", cat: "shoes", sub: "takkies", e: "👟", u: "per pair", price: null },
-  { id: "sandals-marvella", n: "Marvella Metallic Sandals", cat: "shoes", sub: "sandals", e: "👡", u: "per pair", price: null },
-  { id: "sandals-summer", n: "Summer Sandals", cat: "shoes", sub: "sandals", e: "👡", u: "per pair", price: null },
-  { id: "flipflops", n: "Flip Flops & Slip-Ins", cat: "shoes", sub: "flipflops", e: "🩴", u: "per pair", price: null },
-  { id: "slippers-fluffy", n: "Fluffy Cross-Strap Slippers", cat: "shoes", sub: "flipflops", e: "🥿", u: "per pair", price: null },
+  { id: "sandals-summer", n: "Sandals — Any 2 Pairs", cat: "shoes", sub: "sandals", e: "👡", u: "2 pairs", price: 25, deal: true, img: 1 },
+  { id: "sandals-marvella", n: "Ladies Summer Fashion Sandals", cat: "shoes", sub: "sandals", e: "👡", u: "per pair", price: null, img: 1 },
+  { id: "slipins-polo", n: "Polo Slip-Ins", cat: "shoes", sub: "flipflops", e: "🩴", u: "per pair", price: 69.99, deal: true, img: 1 },
+  { id: "slipins-tassel", n: "Tassel Slip-Ins", cat: "shoes", sub: "flipflops", e: "🩴", u: "per pair", price: 59.99, deal: true, img: 1 },
+  { id: "flipflops-kids", n: "Kiddies Character Flip Flops", cat: "shoes", sub: "flipflops", e: "🩴", u: "per pair", price: 29.99, deal: true, img: 1 },
+  { id: "flipflops", n: "Slip-Inns & Flip Flops", cat: "shoes", sub: "flipflops", e: "🩴", u: "per pair", price: null, img: 1 },
+  { id: "slippers-fluffy", n: "Ladies Fashion Slippers", cat: "shoes", sub: "flipflops", e: "🥿", u: "per pair", price: null, img: 1 },
   // home appliances
   { id: "phone-fan", n: "Mini Phone Fan (USB)", cat: "home", sub: "electronic", e: "🌀", u: "each", price: 14.99, deal: true },
   { id: "usb-light", n: "USB LED Light", cat: "home", sub: "electronic", e: "💡", u: "each", price: 14.99, deal: true },
-  { id: "ring-light", n: "Selfie Ring Light + Tripod", cat: "home", sub: "electronic", e: "📸", u: "each", price: null },
+  { id: "ring-light", n: "26cm Ring Light + Tripod", cat: "home", sub: "electronic", e: "📸", u: "each", price: 199, deal: true, img: 1 },
   { id: "small-appliances", n: "Kettles & Small Appliances", cat: "home", sub: "electronic", e: "🫖", u: "each", price: null },
-  { id: "refuse-bags", n: "Heavy-Duty Refuse Bags (20-pack)", cat: "home", sub: "cleaning", e: "🗑️", u: "per pack", price: null },
+  { id: "refuse-bags", n: "Heavy-Duty Refuse Bags (20-pack)", cat: "home", sub: "cleaning", e: "🗑️", u: "20-pack", price: 20, deal: true, img: 1 },
+  { id: "fogger", n: "Sanitising Foggers (70% Alcohol)", cat: "home", sub: "cleaning", e: "🧴", u: "each", price: 19.99, deal: true, img: 1 },
   { id: "cleaning-ess", n: "Cleaning Essentials", cat: "home", sub: "cleaning", e: "🧴", u: "each", price: null },
   { id: "dishcloths", n: "Dishcloths & Facecloths", cat: "home", sub: "cleaning", e: "🧽", u: "per pack", price: null },
-  { id: "glass-set", n: "FaQiang Drinking Glass Set", cat: "home", sub: "nonelectric", e: "🥛", u: "boxed set", price: null },
-  { id: "tumblers", n: "Coloured Plastic Tumblers", cat: "home", sub: "nonelectric", e: "🥤", u: "each", price: null },
+  { id: "glass-set", n: "Drinking Glasses (6pc Set)", cat: "home", sub: "nonelectric", e: "🥛", u: "6-pc set", price: null, img: 1 },
+  { id: "tumblers", n: "350ml Plastic Cups (10pc)", cat: "home", sub: "nonelectric", e: "🥤", u: "10-pack", price: null, img: 1 },
   { id: "crockery", n: "Crockery & Dinner Sets", cat: "home", sub: "nonelectric", e: "🍽️", u: "per set", price: null },
   { id: "utensils", n: "Kitchen Utensils", cat: "home", sub: "nonelectric", e: "🥄", u: "each", price: null },
   { id: "otima-5pc", n: "Otima 5-Piece Storage Set", cat: "home", sub: "tupperware", e: "🥡", u: "5-pc set", price: 29.99, deal: true },
@@ -85,7 +89,7 @@ const PRODUCTS = [
   // office
   { id: "ex-books", n: "Exercise Books", cat: "office", sub: "books", e: "📚", u: "each", price: null },
   { id: "notebooks", n: "Notebooks", cat: "office", sub: "books", e: "📓", u: "each", price: null },
-  { id: "pens-multi", n: "Multi-Colour Pens", cat: "office", sub: "pens", e: "🖊️", u: "each", price: null },
+  { id: "pens-multi", n: "3-in-1 Pens", cat: "office", sub: "pens", e: "🖊️", u: "each", price: null, img: 1 },
   { id: "pencils", n: "Pencils & Crayons", cat: "office", sub: "pens", e: "✏️", u: "per pack", price: null },
   { id: "stickers", n: "Stickers", cat: "office", sub: "stationery", e: "✨", u: "per sheet", price: null },
   { id: "glue", n: "Glue Sticks & Glue", cat: "office", sub: "stationery", e: "🖇️", u: "each", price: null },
@@ -93,15 +97,17 @@ const PRODUCTS = [
   { id: "tape", n: "Tape & Adhesives", cat: "office", sub: "stationery", e: "📎", u: "each", price: null },
   { id: "school-packs", n: "School Stationery Packs", cat: "office", sub: "stationery", e: "🎒", u: "per pack", price: null },
   // other
-  { id: "bonnets", n: "Satin Bonnets — Designer Prints (pack)", cat: "other", sub: "beauty", e: "🎀", u: "wholesale pack", price: 25, deal: true },
+  { id: "bonnets", n: "Satin Bonnets — Assorted Branded Prints", cat: "other", sub: "beauty", e: "🎀", u: "each / bulk", price: 25, deal: true, img: 1 },
+  { id: "faceshield", n: "Face Shields", cat: "other", sub: "beauty", e: "🥽", u: "each", price: 4.99, deal: true, img: 1 },
   { id: "jewellery", n: "Costume Jewellery", cat: "other", sub: "beauty", e: "💍", u: "each", price: null },
-  { id: "blanket", n: "Fluffy Blankets & Throws", cat: "other", sub: "textiles", e: "🛏️", u: "each", price: 299, deal: true },
+  { id: "blanket", n: "Fluffy Blankets & Throws", cat: "other", sub: "textiles", e: "🛏️", u: "each", price: null },
   { id: "carpet", n: "Carpets — All Carpets", cat: "other", sub: "textiles", e: "🧶", u: "each", price: 199, deal: true },
-  { id: "rugs", n: "Rugs & Mats", cat: "other", sub: "textiles", e: "🧶", u: "each", price: null },
-  { id: "beach-towels", n: "Beach Towels — Tropical Prints", cat: "other", sub: "textiles", e: "🏖️", u: "each", price: null },
-  { id: "manu-set", n: "Man United Buff, Mug & Mask Gift Set", cat: "other", sub: "gifts", e: "⚽", u: "per set", price: null },
+  { id: "rugs", n: "Shaggy Rugs 1.3m × 2.0m", cat: "other", sub: "textiles", e: "🧶", u: "each", price: 299, deal: true, img: 1 },
+  { id: "beach-towels", n: "Beach Towels — Tropical Prints", cat: "other", sub: "textiles", e: "🏖️", u: "each", price: null, img: 1 },
+  { id: "manu-set", n: "Man United Buff, Mug & Mask Gift Set", cat: "other", sub: "gifts", e: "⚽", u: "per set", price: null, img: 1 },
+  { id: "handbags", n: "Branded-Print Handbag Sets", cat: "other", sub: "gifts", e: "👜", u: "per set", price: null, img: 1 },
   { id: "club-mugs", n: "Football Club Mugs", cat: "other", sub: "gifts", e: "☕", u: "each", price: null },
-  { id: "pet-bed", n: "Cushioned Pet Beds", cat: "other", sub: "pets", e: "🐶", u: "each", price: null },
+  { id: "pet-bed", n: "Cushioned Pet Beds", cat: "other", sub: "pets", e: "🐶", u: "each", price: null, img: 1 },
   { id: "weekend-deals", n: "Weekend Deal Items", cat: "other", sub: "seasonal", e: "🏷️", u: "from", price: 99, deal: true },
   { id: "eid-specials", n: "Eid Specials", cat: "other", sub: "seasonal", e: "🌙", u: "each", price: null },
 ];
@@ -301,8 +307,13 @@ function initSearch() {
 }
 
 /* ---------------- product card ---------------- */
-function cardHTML(p) {
+function thumbHTML(p, extra) {
   const [g1, g2] = grad(p);
+  return p.img
+    ? `<div class="thumb has-img ${extra || ""}"><img src="img/${p.id}.jpg" alt="${esc(p.n)}" loading="lazy"></div>`
+    : `<div class="thumb ${extra || ""}" style="--g1:${g1};--g2:${g2}">${p.e}</div>`;
+}
+function cardHTML(p) {
   const priceCell = p.price
     ? `<span class="price">${p.u === "from" ? "from " : ""}${fmt(p.price)}</span>`
     : `<span class="poa">Enquire for price</span>`;
@@ -311,7 +322,7 @@ function cardHTML(p) {
     : `<a class="add-btn enquire" target="_blank" rel="noopener" href="${waLink(`Hi AR! Price check please: ${p.n}`)}">WhatsApp</a>`;
   return `<article class="card" id="p-${p.id}">
     ${p.deal ? '<span class="badge">DEAL</span>' : ""}
-    <div class="thumb" style="--g1:${g1};--g2:${g2}">${p.e}</div>
+    ${thumbHTML(p)}
     <h3>${esc(p.n)}</h3><p class="unit">${p.u === "from" ? "assorted items" : esc(p.u)}</p>
     <div class="price-row">${priceCell}${btn}</div>
   </article>`;
@@ -384,9 +395,9 @@ function renderCart() {
     return;
   }
   const lines = ids.map((id) => {
-    const p = prod(id), [g1, g2] = grad(p);
+    const p = prod(id);
     return `<div class="cart-line">
-      <div class="thumb" style="--g1:${g1};--g2:${g2}">${p.e}</div>
+      ${thumbHTML(p)}
       <div><div class="cl-name">${esc(p.n)}</div><div class="cl-unit">${esc(p.u)} · ${fmt(p.price)}</div>
         <button class="cl-remove" onclick="setQty('${id}',0)">Remove</button></div>
       <div class="qty">
